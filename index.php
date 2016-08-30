@@ -21,10 +21,7 @@
 					isset($_POST['message'])&&
 					isset($_POST['subject'])) {
 				mail($_POST['email'], $_POST['subject'], $_POST['message']);
-				echo "Message send!";
-			}
-			else {
-				echo "<p>Error</p>";
+				echo "Message sent!";
 			}
 		?>
 	</body>
